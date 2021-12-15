@@ -4,7 +4,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'my-green': '#008c8d'
+      },
+    },
   },
   plugins: [],
 };
