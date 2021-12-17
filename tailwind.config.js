@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   content: [],
   theme: {
+    backgroundSize: {
+      '100%': '100%'
+    },
     extend: {
       colors: {
         'font-green': '#008c8d',
