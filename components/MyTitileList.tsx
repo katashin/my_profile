@@ -40,7 +40,7 @@ export const SkillTitle = () => {
 
 export const ValueTitle = () => {
   return (
-    <div id='values' className='flex justify-center pt-10'>
+    <div id='values' className='mt-10 flex justify-center pt-10'>
       <p className='font-bold text-3xl mr-6'>{MyTitle.ValueJpTitle}</p>
       <p className='text-font-green my-auto text-2xl uppercase'>{MyTitle.ValueEgTitle}</p>
     </div>
