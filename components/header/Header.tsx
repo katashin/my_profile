@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div id='header' className='px-2 bg-white border-b-2'>
       <div className='md:flex justify-between'>
-        <div className=''>
+        <div>
           <Image
             className='hover:opacity-75'
             src='/logo.png'
