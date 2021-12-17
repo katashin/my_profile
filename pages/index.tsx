@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 import { Header } from '../components/header/Header';
 import { HeaderMain } from '../components/header/HeaderMain';
 import { About } from '../components/about/about';
+import { Future } from '../components/future/feature';
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       <Header />
       <HeaderMain />
       <About />
+      <Future />
     </div>
   )
 };
