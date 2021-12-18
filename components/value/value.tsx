@@ -3,7 +3,7 @@ import { MyValueContens } from "./valuecontent";
 
 export const Value = () => {
   return (
-    <div className='bg-skill bg-100% -mt-14'>
+    <div>
       <ValueTitle />
       <MyValueContens />
     </div>
