@@ -3,7 +3,7 @@ import { MyValueContens } from "./valuecontent";
 
 export const Value = () => {
   return (
-    <div>
+    <div className=''>
       <ValueTitle />
       <MyValueContens />
     </div>

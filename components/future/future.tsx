@@ -5,7 +5,7 @@ const text: string = 'テキストテキストテキストvテキストテキス
 
 export const Future = () => {
   return (
-    <div className="bg-future bg-100%">
+    <div className="bg-future bg-100% md:-mt-48">
       <div className="mx-10 md:flex justify-center pt-96 px-64 pb-12">
         <div className="mr-20">
           <FutureTitle />

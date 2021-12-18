@@ -32,7 +32,7 @@ const items: Valuestyle[] = [item1, item2, item3]
 
 export const MyValueContens = () => {
   return (
-    <div className='relative bg-white mt-5 rounded-xl mx-20 grid grid-cols-1 text-center py-10 lg:mx-72 lg:grid-cols-3 lg:-mb-64'>
+    <div className='relative bg-white mt-5 rounded-xl mx-20 grid grid-cols-1 text-center py-10 lg:mx-72 lg:grid-cols-3'>
       <div className='pt-10 lg-mx-20 border-b-4 border-line lg:border-r-4 lg:border-b-0'>
       <Image src={item1.picture} alt={item1.pictureTitle} width={190} height={190} />
       <h1 className='text-font-green font-bold text-2xl mt-5'>{item1.title}</h1>
