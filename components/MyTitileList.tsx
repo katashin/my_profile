@@ -49,8 +49,8 @@ export const ValueTitle = () => {
 
 export const FutureTitle = () => {
   return (
-    <div id='future' className='flex justify-start pt-10'>
-      <p className='font-bold text-3xl mr-6'>{MyTitle.FutureJpTitle}</p>
+    <div id='future' className='md:flex justify-start pt-10'>
+      <p className='text-xl font-bold md:text-3xl mr-6'>{MyTitle.FutureJpTitle}</p>
       <p className='text-font-green my-auto text-2xl uppercase'>{MyTitle.FutureEgTitle}</p>
     </div>
   );

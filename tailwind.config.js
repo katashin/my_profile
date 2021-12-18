@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         'font-green': '#008c8d',
         'header-green': '#6bc2c3',
-        'footer-black': '#262c3a',
+        'futter-black': '#262c3a',
         'skill-bar1': '#c5eaea',
         'skill-bar2': '#2bb9ba',
         'line': '#c5eaea'
