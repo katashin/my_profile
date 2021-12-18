@@ -39,7 +39,7 @@ export const Skill = () => {
   return (
     <div className="bg-skill bg-100% px-10 -mt-28">
       <div className='pt-10 md:flex justify-center text-center md:pt-32 md:px-64 md:pb-56'>
-        <Image src='/skill.png' width={1200} height={700} alt="スキル画像"/>
+        <Image src='/skill.png' width={1400} height={700} alt="スキル画像"/>
         <div className="md:ml-32 pl-0">
           <SkillTitle/>
           <div className="pt-4 text-left">
