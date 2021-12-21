@@ -20,6 +20,7 @@ module.exports = {
         'about': "url('/bg-about.png')",
         'skill': "url('/bg-skills.png')",
         'future': "url('/bg-future.png')",
+        'sp-skill': "url('/bg-skills-sp.png')"
       },
   },
   plugins: [],

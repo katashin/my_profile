@@ -5,13 +5,15 @@ const text: string = 'テキストテキストテキストvテキストテキス
 
 export const Future = () => {
   return (
-    <div className="bg-future bg-100% md:-mt-48">
-      <div className="mx-10 md:flex justify-center pt-96 px-64 pb-12">
-        <div className="mr-20">
+    <div className="bg-future bg-no-repeat bg-cover px-3 pt-96 md:-mt-48 md:pt-0 md:bg-100%">
+      <div className="md:flex justify-center md:pt-64 md:mx-60">
+        <div className="md:mr-20">
           <FutureTitle />
-          <div className="mt-5">{ text }</div>
+          <div className="my-5">{ text }</div>
         </div>
-        <Image src='/future.png' width={2000} height={1200} alt="３年後の画像"/>
+        <div className="md:mb-10">
+          <Image src='/future.png' width={2000} height={1200} alt="３年後の画像" objectFit="cover"/>
+        </div>
       </div>
     </div>
   )
