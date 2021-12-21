@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div id='header' className='px-2 bg-white border-b-2'>
       <div className='md:flex justify-between'>
-        <div>
+        <div className='text-center'>
           <Image
             className='hover:opacity-75'
             src='/logo.png'
@@ -16,7 +16,7 @@ export const Header = () => {
             height={80}
           />
         </div>
-        <div className='flex justify-between'>
+        <div className='mx-5 mb-3 flex justify-between'>
           {menuLists.map(function (list) {
             return (
               <ul className='my-auto'>
