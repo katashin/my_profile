@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Link as Scroll } from 'react-scroll';
 
 export const Header = () => {
   const menuLists: string[] = ['about', 'skills', 'values', 'future'];
@@ -20,16 +21,14 @@ export const Header = () => {
           {menuLists.map(function (list) {
             return (
               <ul className='my-auto'>
-                <Link href={`#${list}`}>
-                  <a>
-                    <li
-                      key={list}
-                      className='py-auto md:px-5 uppercase font-bold hover:text-font-green'
-                    >
-                      {list}
-                    </li>
-                  </a>
-                </Link>
+                <Scroll to={list} smooth={true} duration={600}>
+                  <li
+                    key={list}
+                    className='py-auto md:px-5 uppercase font-bold hover:text-font-green'
+                  >
+                    {list}
+                  </li>
+                </Scroll>
               </ul>
             );
           })}
