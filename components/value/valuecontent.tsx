@@ -28,38 +28,26 @@ const item3: Valuestyle = {
   text: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト'
 }
 
-const items: Valuestyle[] = [item1, item2, item3]
+const items: Valuestyle[] = [item1, item2]
 
 export const MyValueContens = () => {
   return (
     <div className='relative bg-white rounded-xl grid grid-cols-1 text-center md:mt-10 lg:mx-56 lg:grid-cols-3'>
-      <div className='pt-10 lg-mx-20 border-b-4 border-line lg:px-8 lg:border-r-4 lg:border-b-0'>
-      <Image src={item1.picture} alt={item1.pictureTitle} width={190} height={190} />
-      <h1 className='text-font-green font-bold text-2xl mt-5'>{item1.title}</h1>
-      <p className='mt-5 mb-10 text-left'>{item1.text}</p>
-      </div>
-      <div className='pt-10 lg-mx-20 border-b-4 border-line lg:px-8 lg:border-r-4 lg:border-b-0'>
-      <Image src={item2.picture} alt={item2.pictureTitle} width={190} height={190} />
-      <h1 className='text-font-green font-bold text-2xl mt-5'>{item2.title}</h1>
-      <p className='mt-5 mb-10 text-left'>{item2.text}</p>
-      </div>
+      {console.log(items)}
+      {items.map((item) => {
+        return(
+          <div className='pt-10 lg-mx-20 border-b-4 border-line lg:px-8 lg:border-r-4 lg:border-b-0'>
+            <Image src={item.picture} alt={item.pictureTitle} width={190} height={190} />
+            <h1 className='text-font-green font-bold text-2xl mt-5'>{item.title}</h1>
+            <p className='mt-5 text-left'>{item.text}</p>
+          </div>
+        )
+      })}
       <div className='pt-10 lg-mx-20 lg:px-8'>
-      <Image src={item3.picture} alt={item3.pictureTitle} width={190} height={190} />
-      <h1 className='text-font-green font-bold text-2xl mt-5'>{item3.title}</h1>
-      <p className='mt-5 mb-10 text-left'>{item3.text}</p>
+        <Image src={item3.picture} alt={item3.pictureTitle} width={190} height={190} />
+        <h1 className='text-font-green font-bold text-2xl mt-5'>{item3.title}</h1>
+        <p className='mt-5 mb-10 text-left'>{item3.text}</p>
       </div>
     </div>
-    
   );
 };
-{/* {items.map((item) => {
-  return (
-    <div className='mx-20 grid grid-cols-1 text-center pt-20 lg:mx-36 lg:grid-cols-3'>
-      <div className='pt-10 lg-mx-20 border-b-4 border-line lg:border-r-4 lg:border-b-0'>
-        <Image src={item.picture} alt={item.pictureTitle} width={190} height={190} />
-        <h1 className='text-font-green font-bold text-2xl mt-5'>{item.title}</h1>
-        <p className='mt-5 text-left'>{item.text}</p>
-      </div>
-    </div>
-)
-})} */}
