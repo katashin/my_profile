@@ -1,41 +1,21 @@
 import Image from 'next/image';
+import type { FC } from 'react';
 
-const Content: {
-  Subtitle1: string;
-  Text1: string;
-  Subtitle2: string;
-  Text2: string;
-  Subtitle3: string;
-  Text3: string;
-} = {
-  Subtitle1: '趣味',
-  Text1:
-    'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
-  Subtitle2: '好きな食べ物',
-  Text2:
-    'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
-  Subtitle3: `性格`,
-  Text3:
-    'テキストテキストテテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
-};
+type Myabout = {
+  subtitle: string;
+  src: string;
+  alt: string;
+}
 
-export const MyAboutContens = () => {
+export const MyAboutContens: FC<Myabout> = props => {
+  const {subtitle, src, alt} = props;
+  console.log(props);
   return (
-    <div className='grid grid-cols-1 text-center md:mt-10 lg:mx-56 lg:grid-cols-3'>
+    <div>
       <div className='pt-5 lg:mx-8'>
-        <Image src='/about-1.png' alt='趣味画像' width={190} height={160} />
-        <h1 className='text-font-green font-bold text-2xl mt-5'>{Content.Subtitle1}</h1>
-        <p className='mt-5 text-left'>{Content.Text1}</p>
-      </div>
-      <div className='pt-5 lg:mx-8'>
-        <Image src='/about-2.png' alt='趣味画像' width={190} height={160} />
-        <h1 className='text-font-green font-bold text-2xl mt-5'>{Content.Subtitle2}</h1>
-        <p className='mt-5 text-left'>{Content.Text2}</p>
-      </div>
-      <div className='pt-5 lg:mx-8'>
-        <Image src='/about-3.png' alt='趣味画像' width={190} height={160} />
-        <h1 className='text-font-green font-bold text-2xl mt-5'>{Content.Subtitle3}</h1>
-        <p className='mt-5 text-left'>{Content.Text3}</p>
+        <Image src={src} alt={alt} width={190} height={160} />
+        <h1 className='text-font-green font-bold text-2xl mt-5'>{props.subtitle}</h1>
+        <p className='mt-5 text-left'>{props.children}</p>
       </div>
     </div>
   );
