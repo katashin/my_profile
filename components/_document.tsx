@@ -12,7 +12,7 @@ export const PageHead = () => {
       <meta property="og:title" content="fwywd 一次試験課題 ポートフォリ作成" />
       <meta property="og:description" content="fwywdの一次試験で作成したポートフォリオ課題のサイトです。" />
       <meta property="og:site_name" content="fwywd 一次試験課題で作成したポートフォリオ" />
-      <meta property="og:image" content="https://s4.aconvert.com/convert/p3r68-cdx67/afy3z-2q8pp.png" />
+      <meta property="og:image" content="https://drive.google.com/file/d/1Q-DsKD18DimlMisHWL0uVLJk0pTiPNfu/view?usp=sharing" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@katashin_3812" />
       <title>My Profile</title>
