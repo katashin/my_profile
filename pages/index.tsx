@@ -10,7 +10,6 @@ import { Skill } from '../components/skill/skill';
 import { Value } from '../components/value/value';
 import { Future } from '../components/future/future';
 import { FuuterBar } from '../components/futter/futter';
-import { ShareButton } from '../components/Sharebotton';
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +17,6 @@ const Home: NextPage = () => {
       <PageHead />
       <Header />
       <HeaderMain />
-      <ShareButton/>
       <About />
       <Skill />
       <Value />
