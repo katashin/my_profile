@@ -9,13 +9,15 @@ export const Header = () => {
     <div id='header' className='px-2 bg-white border-b-2'>
       <div className='md:flex justify-between'>
         <div className='text-center'>
-          <Image
-            className='hover:opacity-75'
-            src='/logo.png'
-            alt='ヘッダーロゴ'
-            width={150}
-            height={80}
-          />
+          <a href="https://fwywd.com/" target={'_blank'}>
+            <Image
+              className='hover:opacity-75'
+              src='/logo.png'
+              alt='ヘッダーロゴ'
+              width={150}
+              height={80}
+            />
+          </a>
         </div>
         <div className='mx-5 mb-3 flex justify-between'>
           {menuLists.map(function (list) {
