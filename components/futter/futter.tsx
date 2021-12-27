@@ -9,7 +9,7 @@ const text: {create: string, name: string, conponent: string} = {
 export const FuuterBar = () => {
   return (
     <div className='bg-futter-black text-white text-center'>
-      <div className="py-10">
+      <div className="pt-10 pb-28">
         <p className='uppercase'>{text.create} <span className="text-xl font-bold">{text.name}</span></p>
         <p className="py-10 hover:opacity-75"><Image src='/logo_white.png' width={100} height={120} alt="フッター画像" /></p>
         <div className="flex justify-center pb-10">
