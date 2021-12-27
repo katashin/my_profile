@@ -14,7 +14,7 @@ export const FuuterBar = () => {
         <p className="py-10 hover:opacity-75"><Image src='/logo_white.png' width={100} height={120} alt="フッター画像" /></p>
         <div className="flex justify-center pb-10">
           <div className="pr-5 hover:opacity-75">
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count='false' target={'_blank'} data-text='シェアありがとうございます。片山真介と申します。宜しくお願いします。' data-hashtags='fwywd'>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count='false' target={'_blank'} data-text={'シェアありがとうございます。片山真介と申します。宜しくお願いします。'} data-hashtags={'fwywd'}>
               <Image src='/twitter.png' width={30} height={30} alt="フッター画像" />
               <script async src='https://platform.twitter.com/widgets.js' charSet='utf-8'></script>
             </a>
