@@ -32,7 +32,7 @@ const items: Valuestyle[] = [item1, item2]
 
 export const MyValueContens = () => {
   return (
-    <div className='relative bg-white rounded-xl grid grid-cols-1 text-center md:mt-10 lg:mx-56 lg:grid-cols-3'>
+    <div className='relative bg-white rounded-xl grid grid-cols-1 text-center xl:mt-10 xl:mx-56 xl:grid-cols-3'>
       {console.log(items)}
       {items.map((item) => {
         return(
