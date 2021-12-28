@@ -38,13 +38,13 @@ const comment: string = `テキストテキストテキストテキストテキ�
 
 export const Skill = () => {
   return (
-    <div className="bg-sp-skill bg-100% pt-10 pb-20 bg-no-repeat md:bg-skill md:px-3 md:-mt-20 md:static md:bg-no-repeat md:pb-96">
-      <div className='px-3 md:pt-10 md:pb-10 md:px-64'>
-        <div className="text-center md:flex justify-center md:pt-10 md:pl-44">
+    <div className="bg-sp-skill bg-100% pt-10 pb-20 bg-no-repeat xl:bg-skill xl:px-3 xl:-mt-20 xl:static xl:bg-no-repeat xl:pb-96">
+      <div className='px-3 md:px-64 xl:pt-10 xl:pb-10 xl:px-64'>
+        <div className="text-center xl:pt-10 xl:pl-44">
           <MainTitle JaTitle="スキル" EgTitle="skills"/>
         </div>
-        <div className="grid md:grid-cols-2">
-          <div className="pt-4 px-2 md:pr-10">
+        <div className="grid xl:grid-cols-2">
+          <div className="pt-4 px-2 xl:pr-10">
             <Image src='/skill.png' width={1000} height={700} alt="スキル画像"/>
           </div>
           <div className="py-4 text-left">
