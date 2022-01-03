@@ -6,6 +6,7 @@
     "plugin:import/warnings",
     "plugin:tailwindcss/recommended"
     ],
+  "plugins": ["tailwindcss"],
   "ignorePatterns": ["*.config.js"],
   "rules": {
     "import/order": [
