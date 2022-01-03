@@ -5,7 +5,7 @@ import { HeaderMain } from '../components/Pageheader/PageMain';
 import { Header } from '../components/Pageheader/Pageheader';
 import { ShareButton } from '../components/ShareButton';
 import { PageHead } from '../components/_document';
-import { About } from '../components/About/about';
+import { About } from '../components/About/About';
 import { FuuterBar } from '../components/Pagefutter/Pagefutter';
 import { Future } from '../components/Future/future';
 import { Skill } from '../components/Skill/skill';

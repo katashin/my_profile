@@ -7,7 +7,7 @@ type MyAbout = {
   alt: string;
 };
 
-export const MyAboutContens: FC<MyAbout> = (props) => {
+export const MyAbout: FC<MyAbout> = (props) => {
   const { subtitle, src, alt } = props;
   console.log(props);
   return (
