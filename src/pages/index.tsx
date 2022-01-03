@@ -5,11 +5,11 @@ import { HeaderMain } from '../components/Pageheader/PageMain';
 import { Header } from '../components/Pageheader/Pageheader';
 import { ShareButton } from '../components/ShareButton';
 import { PageHead } from '../components/_document';
-import { About } from '../components/about/about';
-import { FuuterBar } from '../components/futter/futter';
-import { Future } from '../components/future/future';
-import { Skill } from '../components/skill/skill';
-import { Value } from '../components/value/value';
+import { About } from '../components/About/about';
+import { FuuterBar } from '../components/Pagefutter/Pagefutter';
+import { Future } from '../components/Future/future';
+import { Skill } from '../components/Skill/skill';
+import { Value } from '../components/Value/value';
 // import styles from '..../styles/Home.module.css';
 
 const Home: NextPage = () => {
