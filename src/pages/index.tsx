@@ -22,10 +22,10 @@ const Home: NextPage = () => {
       <Skill />
       <Value />
       <Future />
-      <FuuterBar/>
-      <ShareButton/>
+      <FuuterBar />
+      <ShareButton />
     </div>
-  )
+  );
 };
 
 export default Home;
