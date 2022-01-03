@@ -1,25 +1,25 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 type Title = {
   JaTitle: string;
   EgTitle: string;
-}
+};
 
 export const MainTitle = (props: Title) => {
-  const { JaTitle, EgTitle } = props
+  const { JaTitle, EgTitle } = props;
   return (
-    <div id={EgTitle} className='text-center md:flex justify-center pt-10'>
-      <p className='text-2xl font-bold md:text-3xl md:mr-6'>{JaTitle}</p>
-      <p className='text-font-green my-auto md:text-2xl uppercase'>{EgTitle}</p>
+    <div id={EgTitle} className='justify-center pt-10 text-center md:flex'>
+      <p className='text-2xl font-bold md:mr-6 md:text-3xl'>{JaTitle}</p>
+      <p className='my-auto text-font-green uppercase md:text-2xl'>{EgTitle}</p>
     </div>
-  )
-}
+  );
+};
 
 export const Test = (props: any) => {
-  const { testword} = props
+  const { testword } = props;
   return (
     <>
       <p>{testword}</p>
     </>
-  )
-}
+  );
+};
