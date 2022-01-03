@@ -1,15 +1,15 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import { About } from '../components/About/Hero';
+import { Future } from '../components/Future/future';
+import { FuuterBar } from '../components/Pagefutter/Pagefutter';
 import { HeaderMain } from '../components/Pageheader/PageMain';
 import { Header } from '../components/Pageheader/Pageheader';
 import { ShareButton } from '../components/ShareButton';
-import { PageHead } from '../components/_document';
-import { About } from '../components/About/About';
-import { FuuterBar } from '../components/Pagefutter/Pagefutter';
-import { Future } from '../components/Future/future';
 import { Skill } from '../components/Skill/skill';
 import { Value } from '../components/Value/value';
+import { PageHead } from '../components/_document';
 // import styles from '..../styles/Home.module.css';
 
 const Home: NextPage = () => {
