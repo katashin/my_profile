@@ -6,7 +6,7 @@ const text: string =
 
 export const Future = () => {
   return (
-    <div className='px-3 pt-96 bg-no-repeat bg-future xl:pt-0 xl:-mt-48 xl:bg-100% bg-cover'>
+    <div className='px-3 pt-96 bg-no-repeat bg-future xl:pt-0 xl:-mt-48 xl:bg-100%'>
       <div className='justify-center xl:flex xl:pt-64 xl:mx-60'>
         <div className='md:mr-20'>
           <div className='justify-start md:flex'>
