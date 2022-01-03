@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const HeaderMain = () => {
   const MainTitle: string = '自己紹介';
@@ -7,12 +7,12 @@ export const HeaderMain = () => {
 
   return (
     <div className='bg-header-green'>
-      <div className='text-center pt-4 xl:flex justify-between'>
-        <div className='my-auto mx-auto items-center text-center'>
-          <p className='text-white text-4xl xl:text-5xl pb-5 font-bold'>{MainTitle}</p>
-          <p className='text-white text-2xl xl:text-4xl'>{SubTitle}</p>
+      <div className='justify-between pt-4 text-center xl:flex'>
+        <div className='items-center my-auto mx-auto text-center'>
+          <p className='pb-5 text-4xl font-bold text-white xl:text-5xl'>{MainTitle}</p>
+          <p className='text-2xl text-white xl:text-4xl'>{SubTitle}</p>
         </div>
-        <div className='px-10 xl:mr-20 py-10'>
+        <div className='py-10 px-10 xl:mr-20'>
           <Image src={'/hero.png'} width={800} height={700} alt='メイン画像'></Image>
         </div>
       </div>
