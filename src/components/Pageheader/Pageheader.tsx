@@ -28,7 +28,7 @@ export const Header = () => {
                 <Scroll to={value} smooth={true} duration={600}>
                   <li
                     key={index}
-                    className='font-bold hover:text-font-green uppercase md:px-5 py-auto'
+                    className='font-bold hover:text-font-green uppercase md:px-5'
                   >
                     {value}
                   </li>
