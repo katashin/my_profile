@@ -34,9 +34,9 @@ export const MyValueContens = () => {
   return (
     <div className='relative bg-white rounded-xl grid grid-cols-1 text-center xl:mt-10 xl:mx-56 xl:grid-cols-3'>
       {console.log(items)}
-      {items.map((item) => {
+      {items.map((item, index) => {
         return(
-          <div className='pt-10 lg-mx-20 border-b-4 border-line lg:px-8 lg:border-r-4 lg:border-b-0'>
+          <div key={index} className='pt-10 lg-mx-20 border-b-4 border-line lg:px-8 lg:border-r-4 lg:border-b-0'>
             <Image src={item.picture} alt={item.pictureTitle} width={190} height={190} />
             <h1 className='text-font-green font-bold text-2xl mt-5'>{item.title}</h1>
             <p className='mt-5 text-left'>{item.text}</p>

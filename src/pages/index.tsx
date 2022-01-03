@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import { PageHead } from '../components/_document';
-import { Header } from '../components/Pageheader/Pageheader';
+import Header from '../components/Pageheader/Pageheader';
 import { HeaderMain } from '../components/Pageheader/PageMain';
 import { About } from '../components/about/about';
 import { Skill } from '../components/skill/skill';
