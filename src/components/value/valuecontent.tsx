@@ -1,34 +1,34 @@
 import Image from 'next/image';
 
-interface Valuestyle {
+interface ValueStyle {
   picture: string;
   pictureTitle: string;
   title: string;
   text: string;
 }
 
-const item1: Valuestyle = {
+const item1: ValueStyle = {
   picture: '/value1.png',
   pictureTitle: '価値観０１画像',
   title: '価値観０１',
   text: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
 };
 
-const item2: Valuestyle = {
+const item2: ValueStyle = {
   picture: '/value2.png',
   pictureTitle: '価値観０2画像',
   title: '価値観０２',
   text: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
 };
 
-const item3: Valuestyle = {
+const item3: ValueStyle = {
   picture: '/value3.png',
   pictureTitle: '価値観０3画像',
   title: '価値観０３',
   text: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト',
 };
 
-const items: Valuestyle[] = [item1, item2];
+const items: ValueStyle[] = [item1, item2];
 
 export const MyValueContens = () => {
   return (
