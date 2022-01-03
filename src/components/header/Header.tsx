@@ -21,7 +21,7 @@ export const Header = () => {
             />
           </a>
         </div>
-        <div className='mx-5 mb-3 flex justify-between'>
+        <div className='flex justify-between'>
           {menuLists.map(function (value, index) {
             return (
               <ul className='hidden my-auto cursor-pointer md:flex'>
