@@ -14,12 +14,3 @@ export const MainTitle = (props: Title) => {
     </div>
   );
 };
-
-export const Test = (props: any) => {
-  const { testword } = props;
-  return (
-    <>
-      <p>{testword}</p>
-    </>
-  );
-};
