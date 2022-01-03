@@ -7,8 +7,6 @@ fwywd 1次試験
   
 # Requirement
   
-* huga 3.5.2
-* hogehuga 1.0.2
  
 # Installation
 
@@ -17,8 +15,6 @@ pip install huga_package
 ```
  
 # Usage
- 
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
  
 ```bash
 git clone https://github.com/hoge/~
