@@ -13,7 +13,7 @@ export const FuuterBar = () => {
       <div className="pt-10 pb-28">
         <p className='uppercase'>{text.create} <span className="text-xl font-bold">{text.name}</span></p>
         <Scroll to='header' smooth={true} duration={600}>
-          <p className="py-10 hover:opacity-75"><Image src='/logo_white.png' width={100} height={120} alt="フッター画像" /></p>
+          <p className="cursor-pointer py-10 hover:opacity-75"><Image src='/logo_white.png' width={100} height={120} alt="フッター画像" /></p>
         </Scroll>
         <div className="flex justify-center pb-10">
           <div className="pr-5 hover:opacity-75">
