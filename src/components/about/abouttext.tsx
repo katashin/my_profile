@@ -9,7 +9,6 @@ type MyAbout = {
 
 export const MyAbout: FC<MyAbout> = (props) => {
   const { subtitle, src, alt } = props;
-  console.log(props);
   return (
     <div>
       <div className='pt-5 lg:mx-8'>

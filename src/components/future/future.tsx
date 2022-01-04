@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { MainTitle } from '../MyTitileList';
+import { MainTitle } from '../titlelist';
 
 const text: string =
   'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト';
