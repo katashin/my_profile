@@ -1,11 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { About } from '../components/About/myabout';
+import { About } from '../components/About/about';
 import { Future } from '../components/Future/future';
 import { FuuterBar } from '../components/Pagefutter/Pagefutter';
-import { HeaderMain } from '../components/Pageheader/PageMain';
-import { Header } from '../components/Pageheader/Pageheader';
+import { HeaderMain } from '../components/Pagehead/Hero';
+import { Header } from '../components/Pagehead/Pagehead';
 import { ShareButton } from '../components/ShareButton';
 import { Skill } from '../components/Skill/skill';
 import { Value } from '../components/Value/value';
