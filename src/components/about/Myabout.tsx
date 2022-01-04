@@ -1,21 +1,33 @@
 import Image from 'next/image';
-import type { FC } from 'react';
+import { MainTitle } from '../MyTitileList';
+import { MyAbout } from './text';
 
-type MyAbout = {
-  subtitle: string;
-  src: string;
-  alt: string;
-};
-
-export const MyAbout: FC<MyAbout> = (props) => {
-  const { subtitle, src, alt } = props;
-  console.log(props);
+export const About = () => {
   return (
-    <div>
-      <div className='pt-5 lg:mx-8'>
-        <Image src={src} alt={alt} width={190} height={160} />
-        <h1 className='mt-5 text-2xl font-bold text-font-green'>{subtitle}</h1>
-        <p className='mt-5 text-left'>{props.children}</p>
+    <div className='px-3 pb-10 xl:pb-32 xl:bg-100% xl:bg-about'>
+      <MainTitle JaTitle='私について' EgTitle='about' />
+      <div className='grid grid-cols-1 text-center xl:grid-cols-3 xl:mx-56 xl:mt-10'>
+        <MyAbout subtitle='趣味' src='/about-1.png' alt='趣味画像'>
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+        </MyAbout>
+        <MyAbout subtitle='好きな食べ物' src='/about-2.png' alt='食べ物画像'>
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+        </MyAbout>
+        <MyAbout subtitle='性格' src='/about-3.png' alt='性格画像'>
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+        </MyAbout>
       </div>
     </div>
   );
