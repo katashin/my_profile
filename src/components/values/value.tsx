@@ -1,4 +1,4 @@
-import { MainTitle } from '../MyTitileList';
+import { MainTitle } from '../titlelist';
 import { MyValueContens } from './valuecontent';
 
 export const Value = () => {
