@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { MainTitle } from '../MyTitileList';
-import { MyAbout } from './myaboutcard';
+import { MyAbout } from './text';
 
 export const About = () => {
   return (
