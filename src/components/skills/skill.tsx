@@ -39,16 +39,16 @@ const comment: string = `テキストテキストテキストテキストテキ�
 export const Skill = () => {
   return (
     <div className='pt-10 pb-20 bg-no-repeat bg-100% bg-sp-skill xl:static xl:px-3 xl:pb-96 xl:-mt-20 xl:bg-no-repeat xl:bg-skill'>
-      <div className='px-3 md:px-64 xl:px-64 xl:pt-10 xl:pb-10'>
-        <div className='text-center xl:pt-10 xl:pl-44'>
+      <div className='mx-auto max-w-[80%] text-center'>
+        <div className='text-center xl:pl-48'>
           <MainTitle JaTitle='スキル' EgTitle='skills' />
         </div>
-        <div className='grid xl:grid-cols-2'>
-          <div className='px-2 pt-4 xl:pr-10'>
-            <Image src='/skill.png' width={1000} height={700} alt='スキル画像' />
+        <div className='grid-cols-2 xl:grid'>
+          <div className='xl:pr-10'>
+            <Image src='/skill.png' width={553} height={372} alt='スキル画像' />
           </div>
-          <div className='py-4 text-left'>
-            {comment}
+          <div className='text-left'>
+            { comment }
             <div className='mt-4 bg-white rounded-xl'>
               <SkillBar skillTitle='skillskill' barNum='50%' percent={50} />
               <SkillBar skillTitle='skillskill' barNum='40%' percent={40} />
