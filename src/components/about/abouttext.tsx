@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import type { FC } from 'react';
 
-type MyAbout = {
+interface about {
   subtitle: string;
   src: string;
   alt: string;
 };
 
-export const MyAbout: FC<MyAbout> = (props) => {
+export const MyAbout: FC<about> = (props) => {
   const { subtitle, src, alt } = props;
   return (
     <div>
