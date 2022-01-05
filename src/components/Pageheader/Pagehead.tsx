@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Link as Scroll } from 'react-scroll';
+import { HamburgerMenu } from './Hamburger';
 
 export const Header = () => {
   const menus: string[] = ['about', 'skills', 'values', 'future'];
-  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <div id='header' className='mx-auto max-w-[90%]'>
@@ -33,36 +33,7 @@ export const Header = () => {
           })}
         </div>
       </div>
+      <HamburgerMenu />
     </div>
-
-    //     {/* ハンバーガーメニュー */}
-    //     <button
-    //       onClick={() => setOpenMenu(true)}
-    //       className='absolute top-2 left-2 flex-initial md:hidden'
-    //     >
-    //       <Image src='/hangmenu.png' alt='menu' width={30} height={30}></Image>
-    //     </button>
-    //     {openMenu ? (
-    //       <div className='absolute top-0 left-1 z-10 flex-initial bg-white md:hidden'>
-    //         {menus.map(function (value, index) {
-    //           return (
-    //             <>
-    //               <Scroll to={value} smooth={true} duration={600}>
-    //                 <div className='w-16 border-b'>
-    //                   <button
-    //                     onClick={() => setOpenMenu(false)}
-    //                     className='font-bold hover:text-font-green uppercase cursor-pointer'
-    //                   >
-    //                     {value}
-    //                   </button>
-    //                 </div>
-    //               </Scroll>
-    //             </>
-    //           );
-    //         })}
-    //       </div>
-    //     ) : null}
-    //   </div>
-    // </div>
   );
 };
