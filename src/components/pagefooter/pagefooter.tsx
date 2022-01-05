@@ -9,7 +9,7 @@ const text: { create: string; name: string; conponent: string } = {
 
 export const FuuterBar = () => {
   return (
-    <div className='text-center text-white bg-futter-black'>
+    <div className='-mt-1 text-center text-white bg-futter-black'>
       <div className='pt-10 pb-28'>
         <p className='uppercase'>
           {text.create} <span className='text-xl font-bold'>{text.name}</span>

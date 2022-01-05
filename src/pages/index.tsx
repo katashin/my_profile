@@ -21,9 +21,9 @@ const Home: NextPage = () => {
       <About />
       <Skill />
       <Value />
-      {/* <Future />
+      <Future />
       <FuuterBar />
-      <ShareButton /> */}
+      <ShareButton />
     </div>
   );
 };

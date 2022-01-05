@@ -15,7 +15,7 @@ export const Future = () => {
           <div className='my-5'>{text}</div>
         </div>
         <div className='text-center xl:mb-10'>
-          <Image src='/future.png' width={1000} height={700} alt='３年後の画像' objectFit='cover' />
+          <Image src='/future.png' width={1000} height={522} alt='３年後の画像' objectFit='cover' />
         </div>
       </div>
     </div>
