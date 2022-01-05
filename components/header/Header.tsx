@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import { Link as Scroll } from 'react-scroll';
+import Link from 'next/link';
 import { useState } from 'react';
+import { Link as Scroll } from 'react-scroll';
 
 export const Header = () => {
   const menuLists: string[] = ['about', 'skills', 'values', 'future'];
@@ -9,9 +9,9 @@ export const Header = () => {
 
   return (
     <div id='header' className='px-2 bg-white border-b-2'>
-      <div className='md:flex justify-between'>
+      <div className='justify-between md:flex'>
         <div className='text-center'>
-          <a href="https://fwywd.com/" target={'_blank'}>
+          <a href='https://fwywd.com/' target={'_blank'} rel='noreferrer'>
             <Image
               className='hover:opacity-75'
               src='/logo.png'
@@ -21,15 +21,12 @@ export const Header = () => {
             />
           </a>
         </div>
-        <div className='mx-5 mb-3 flex justify-between'>
+        <div className='flex justify-between mx-5 mb-3'>
           {menuLists.map(function (value, index) {
             return (
-              <ul className='hidden my-auto cursor-pointer md:flex'>
+              <ul key={index} className='hidden my-auto cursor-pointer md:flex'>
                 <Scroll to={value} smooth={true} duration={600}>
-                  <li
-                    key={index}
-                    className='py-auto md:px-5 uppercase font-bold hover:text-font-green'
-                  >
+                  <li className='font-bold hover:text-font-green uppercase md:px-5 py-auto'>
                     {value}
                   </li>
                 </Scroll>
@@ -38,24 +35,32 @@ export const Header = () => {
           })}
         </div>
         {/* ハンバーガーメニュー */}
-        <button onClick={() => setOpenMenu(true)} className='flex-initial absolute top-2 left-2 md:hidden'>
+        <button
+          onClick={() => setOpenMenu(true)}
+          className='absolute top-2 left-2 flex-initial md:hidden'
+        >
           <Image src='/hangmenu.png' alt='menu' width={30} height={30}></Image>
         </button>
         {openMenu ? (
-          <div className='flex-initial absolute top-0 left-1 bg-white z-10 md:hidden'>
-            {menuLists.map(function(value, index){
+          <div className='absolute top-0 left-1 z-10 flex-initial bg-white md:hidden'>
+            {menuLists.map(function (value, index) {
               return (
                 <>
                   <Scroll to={value} smooth={true} duration={600}>
                     <div className='w-16 border-b'>
-                      <button onClick={() => setOpenMenu(false)} className='font-bold uppercase cursor-pointer hover:text-font-green'>{value}</button>
+                      <button
+                        onClick={() => setOpenMenu(false)}
+                        className='font-bold hover:text-font-green uppercase cursor-pointer'
+                      >
+                        {value}
+                      </button>
                     </div>
                   </Scroll>
                 </>
-              )
+              );
             })}
           </div>
-        ):null}
+        ) : null}
       </div>
     </div>
   );
