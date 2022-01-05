@@ -26,7 +26,7 @@ export const Header = () => {
             return (
               <ul key={index} className='hidden my-auto cursor-pointer md:flex'>
                 <Scroll to={value} smooth={true} duration={600}>
-                  <li className='font-bold hover:text-font-green uppercase md:px-5 py-auto'>
+                  <li className='font-bold hover:text-font-green uppercase md:px-5'>
                     {value}
                   </li>
                 </Scroll>
