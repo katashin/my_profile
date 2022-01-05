@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
-type Title = {
+interface Title {
   JaTitle: string;
   EgTitle: string;
-};
+}
 
 export const MainTitle = (props: Title) => {
   const { JaTitle, EgTitle } = props;
