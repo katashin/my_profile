@@ -17,13 +17,13 @@ const Home: NextPage = () => {
     <div className='contents text-sm tracking-wider leading-5'>
       <PageHead />
       <Header />
-      <HeaderMain />
+      {/* <HeaderMain />
       <About />
       <Skill />
       <Value />
       <Future />
       <FuuterBar />
-      <ShareButton />
+      <ShareButton /> */}
     </div>
   );
 };
