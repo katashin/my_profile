@@ -17,8 +17,8 @@ const Home: NextPage = () => {
     <div className='contents text-sm tracking-wider leading-5'>
       <PageHead />
       <Header />
-      {/* <HeaderMain />
-      <About />
+      <HeaderMain />
+      {/* <About />
       <Skill />
       <Value />
       <Future />

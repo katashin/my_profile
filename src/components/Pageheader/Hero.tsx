@@ -7,13 +7,13 @@ export const HeaderMain = () => {
 
   return (
     <div className='bg-header-green'>
-      <div className='justify-between pt-4 text-center xl:flex'>
-        <div className='items-center my-auto mx-auto text-center'>
-          <p className='pb-5 text-4xl font-bold text-white xl:text-5xl'>{MainTitle}</p>
-          <p className='text-2xl text-white xl:text-4xl'>{SubTitle}</p>
+      <div className='grid pt-2 text-center md:grid-cols-2'>
+        <div className='my-auto font-bold text-white'>
+          <p className='text-4xl md:text-5xl'>{MainTitle}</p>
+          <p className='pt-2 text-2xl md:text-3xl'>{SubTitle}</p>
         </div>
-        <div className='py-10 px-10 xl:mr-20'>
-          <Image src={'/hero.png'} width={800} height={700} alt='メイン画像'></Image>
+        <div className='py-5 px-10'>
+          <Image src={'/hero.png'} width={800} height={700} alt='メイン画像' />
         </div>
       </div>
     </div>
