@@ -19,8 +19,8 @@ const Home: NextPage = () => {
       <Header />
       <HeaderMain />
       <About />
-      {/* <Skill />
-      <Value />
+      <Skill />
+      {/* <Value />
       <Future />
       <FuuterBar />
       <ShareButton /> */}

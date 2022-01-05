@@ -1,4 +1,4 @@
-type Skill = {
+interface Skill {
   skillTitle: string;
   barNum: string;
   percent: number;
