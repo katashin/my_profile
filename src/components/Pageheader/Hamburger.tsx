@@ -5,7 +5,7 @@ import { Link as Scroll } from 'react-scroll';
 
 export const HamburgerMenu = () => {
   const menus: string[] = ['about', 'skills', 'values', 'future'];
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
   return (
     <>
       <button onClick={() => setOpenMenu(true)} className='absolute top-5 left-4 md:hidden'>
