@@ -9,8 +9,8 @@ export const HeaderMain = () => {
     <div className='bg-header-green'>
       <div className='grid pt-2 text-center md:grid-cols-2'>
         <div className='my-auto font-bold text-white'>
-          <p className='text-4xl md:text-5xl'>{MainTitle}</p>
-          <p className='pt-2 text-2xl md:text-3xl'>{SubTitle}</p>
+          <h2 className='text-4xl md:text-5xl'>{MainTitle}</h2>
+          <h3 className='pt-2 text-2xl md:text-3xl'>{SubTitle}</h3>
         </div>
         <div className='py-5 px-10'>
           <Image src={'/hero.png'} width={800} height={700} alt='メイン画像' />
