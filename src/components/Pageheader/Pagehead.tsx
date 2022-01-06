@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Link as Scroll } from 'react-scroll';
-import { HamburgerMenu } from './Hamburger';
+import { HamburgerMenu } from './hamburger';
 
 export const Header = () => {
   const menus: string[] = ['about', 'skills', 'values', 'future'];

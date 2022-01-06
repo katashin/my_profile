@@ -48,7 +48,7 @@ export const Skill = () => {
             <Image src='/skill.png' width={553} height={372} alt='スキル画像' />
           </div>
           <div className='text-left'>
-            { comment }
+            {comment}
             <div className='mt-4 bg-white rounded-xl'>
               <SkillBar skillTitle='skillskill' barNum='50%' percent={50} />
               <SkillBar skillTitle='skillskill' barNum='40%' percent={40} />
