@@ -1,15 +1,16 @@
-# 概要 
-fwywd 1次試験
+# fwywd 1次試験
  
-# 書き方
-
-# Features
-  
+fwywd １次試験で作成したポートフォリオ
+ 
+ 
 # Requirement
-  
+ 
+* next: "12.0.7"
+* react: "17.0.2"
+* react-dom: "17.0.2"
  
 # Installation
-
+ 
 ```bash
 pip install huga_package
 ```
@@ -30,9 +31,7 @@ python demo.py
  
 作成情報を列挙する
  
-* 作成者
-* 所属
-* E-mail
+* 作成者: 片山真介
  
 # License
 ライセンスを明示する
@@ -41,5 +40,4 @@ python demo.py
  
 社内向けなら社外秘であることを明示してる
  
-"hoge" is Confidential.# fwywd_shinsuke_katayama
-# fwywd_shinsuke_katayama
+"hoge" is Confidential.
