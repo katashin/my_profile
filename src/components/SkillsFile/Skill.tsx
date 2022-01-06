@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { MainTitle } from '../titlelist';
-import { SkillBar } from './skillbar';
+import { SkillBar } from './SkillBars';
 
 interface SkillType {
   title: string;

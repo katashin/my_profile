@@ -1,5 +1,5 @@
 import { MainTitle } from '../titlelist';
-import { MyValueContens } from './valuecontent';
+import { MyValueContens } from './ValueContents';
 
 export const Value = () => {
   return (
